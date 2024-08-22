@@ -31,16 +31,38 @@ Comenzamos con la tabla de verdad para crear esta compuerta, a partir de la cual
 Iniciamos con la tabla de verdad para crear esta compuerta y observamos que la salida "a" se puede expresar como una operación AND entre la entrada y la negación del selector, mientras que la salida "b" se puede expresar como una operación AND entre la entrada y el selector. Podemos comenzar a construir el demultiplexor ahora que hemos creado estas compuertas específicas.
 
 *Not16
+
+Para construir esta compuerta, simplemente aplicamos la operación NOT que previamente hemos creado, repetida dieciséis veces.
+
 *And16
+
+Para construir esta puerta, simplemente aplicamos la operación And que hemos creado anteriormente, dieciséis veces.
+
 *Or16
+
+Para construir esta compuerta, simplemente repetimos dieciséis veces la operación Or que previamente hemos creado.
+
 *Mux16
+
+Para construir esta compuerta, simplemente aplicamos dieciséis veces la operación Mux que previamente hemos creado.
+
 *Or8Way
+
+![image](https://github.com/user-attachments/assets/071e5ca7-9057-4011-bdf4-929a70e6e081)
+
+Para crear esta compuerta, usamos la operación OR que hemos construido anteriormente. Realizamos una operación OR entre la primera entrada y la segunda, y luego entre el resultado anterior y la siguiente. Repetimos este proceso hasta combinar las ocho compuertas necesarias.
+
 *Mux4Way16
+
+Para llevar a cabo esta operación, dividimos las entradas en pares y aplicamos la operación MUX a cada par. Esto nos da dos resultados distintos que también utilizamos la operación MuX.
+
 *DMux4Way
+
+Para realizar esta tarea, dividimos las entradas en pares y aplicamos la operación DMUX a cada par. Esto nos da dos resultados distintos a los que también aplicamos la operación DMUX.
+
 *DMux8Way
 
-
-
+Agrupamos las entradas en pares y aplicamos la operación DMUX a cada par para llevar a cabo esta operación. Esto nos da dos resultados distintos, a los que también aplicamos la operación DMUX.
 
 
 
