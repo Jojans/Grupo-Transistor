@@ -42,35 +42,20 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-    // se utiliza el selector para definir si se convierten las entradas 
-    // en un vector de ceros 
-    Mux16(a=x, b=false, sel=zx, out=xnew1);
-    Mux16(a=y, b=false, sel=zy, out=ynew1);
-
-    // Se niegan los valores obtenidos para luego con los respectivos selectores
-    // definir si dichas entradas se niegan 
-    Not16(in=xnew1, out=xneg);
-    Not16(in=ynew1, out=yneg);
-    Mux16(a=xnew1, b=xneg, sel=nx, out=xnew);
-    Mux16(a=ynew1, b=yneg, sel=ny, out=ynew);
-
-    //con el siguiente selector se define si lo que queremos realizar es
-    //una funcion or o una and y se realizan las operaciones
-    Mux16(a=false, b=ynew, sel=f, out=o1); /* 16bit 0 if f=0, y if f=1 */
-    Add16(a=xnew, b=o1, out=addxy);
-    And16(a=xnew, b=ynew, out=andxy);
-    Mux16(a=andxy, b=addxy, sel=f, out=fxy);
-
-    // se niega esta ultima salida y se utiliza el siguiente selector para 
-    // definir si dicha salida se va a negar 
-    Not16(in=fxy, out=nfxy);
-    Mux16(a=fxy, b=nfxy, sel=no, out=out, out[15]=ng, out[0..7]=msb, out[8..15]=lsb);
-
-
-    // si la salida al final nos da una respuesta logica de cero cambiamos la salida 
-    // del zr por uno 
-    Or8Way(in=msb, out=zr1);
-    Or8Way(in=lsb, out=zr2);
-    Or(a=zr1, b=zr2, out=zr3);
-    Not(in=zr3, out=zr);
+        Mux16(a=x, b=false, sel=zx, out=xnew1);
+        Mux16(a=y, b=false, sel=zy, out=ynew1);
+        Not16(in=xnew1, out=xneg);
+        Not16(in=ynew1, out=yneg);
+        Mux16(a=xnew1, b=xneg, sel=nx, out=xnew);
+        Mux16(a=ynew1, b=yneg, sel=ny, out=ynew);
+        Mux16(a=false, b=ynew, sel=f, out=o1); /* 16bit 0 if f=0, y if f=1 */
+        Add16(a=xnew, b=o1, out=addxy);
+        And16(a=xnew, b=ynew, out=andxy);
+        Mux16(a=andxy, b=addxy, sel=f, out=fxy);
+        Not16(in=fxy, out=nfxy);
+        Mux16(a=fxy, b=nfxy, sel=no, out=out, out[15]=ng, out[0..7]=msb, out[8..15]=lsb);
+        Or8Way(in=msb, out=zr1);
+        Or8Way(in=lsb, out=zr2);
+        Or(a=zr1, b=zr2, out=zr3);
+        Not(in=zr3, out=zr);
 }
