@@ -1,7 +1,7 @@
-// Este archivo es parte de www.nand2tetris.org
-// y el libro "Los elementos de los sistemas informáticos"
-// por Nisan y Schocken, MIT Press.
-// Nombre del archivo: proyectos/1/Or16.hdl
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/1/Or16.hdl
 /**
  * 16-bit Or gate:
  * for i = 0, ..., 15:
