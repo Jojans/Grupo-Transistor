@@ -79,6 +79,6 @@ Existen diversas herramientas que sirven para cumplir funciones similares a las 
 
 -Digital works: Es una herramienta para estudiar el comportamiento de los circuitos digitales. 
 
-fuentes: 
+Fuentes: 
 - https://cburch.com/logisim/ 
 - https://www.mecanique.co.uk/shop/index.php?route=product/category&path=89 
