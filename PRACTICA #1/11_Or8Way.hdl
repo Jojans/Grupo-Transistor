@@ -1,0 +1,27 @@
+// Este archivo es parte de www.nand2tetris.org
+// y el libro "Los elementos de los sistemas informáticos"
+// por Nisan y Schocken, MIT Press.
+// Nombre del archivo: proyectos/1/Mux16.hdl
+/**
+ * 8-way Or gate: 
+ * out = in[0] Or in[1] Or ... Or in[7]
+ */
+ /*La forma en que funciona este chip es que realiza la operacion 
+ *OR para los 8 bits de entrada, es decir da como resultado out=0 cuando todos los bits de entrada son 0, y si hay al menos un 
+ *bit con 1, la salida da como resultado out=1*/
+CHIP Or8Way {
+    IN in[8];
+    OUT out;
+
+    PARTS:
+    /* Implementaremos el codigo a manera de compuertas en cascada, es decir la primera OR tiene como entrada a=in[0], b=in[1], out=out1 y la salida la
+	*conectamos a otra con como entradas a=out1, b=in[2] y la salida la conectamos a la siguiente compuerta como a=out2, b=in[3] y asi sucesivamente
+	*/
+	Or(a=in[0],b=in[1], out=orOut1);
+	Or(a=orOut1, b=in[2], out=orOut2);
+	Or(a=orOut2, b=in[3], out=orOut3);
+	Or(a=orOut3, b=in[4], out=orOut4);
+	Or(a=orOut4, b=in[5], out=orOut5);
+	Or(a=orOut5, b=in[6], out=orOut6);
+	Or(a=orOut6, b=in[7], out=out);
+	}
