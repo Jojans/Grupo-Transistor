@@ -65,9 +65,20 @@ Para realizar esta tarea, dividimos las entradas en pares y aplicamos la operaci
 Agrupamos las entradas en pares y aplicamos la operación DMUX a cada par para llevar a cabo esta operación. Esto nos da dos resultados distintos, a los que también aplicamos la operación DMUX.
 
 
-
-
 Preguntas adicionales:
 
 ¿Que consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?
+
+Para trabajar con Nand2Tetris es necesario conocer la estructura de la interfaz gráfica de usuario, con el objetivo de comprender las diferentes herramientas, materiales e información presente en el curso. Destacando que el objetivo principal de Nand2Tetris es la realización de 12 proyectos los cuales contienen el material necesario para posteriormente desarrollarlo de manera práctica cada uno de ellos en el simulador encontrado en el apartado de Software.
+
 ¿Qué otras herramientas similares a Nand2Tetris existen? (De mínimo dos ejemplos)
+
+Existen diversas herramientas que sirven para cumplir funciones similares a las que realiza Nand2Tetris ejemplo de ello son:
+
+-Logisim: es una herramienta educativa de software diseñada para la creación y simulación de circuitos digitales. 
+
+-Digital works: Es una herramienta para estudiar el comportamiento de los circuitos digitales. 
+
+fuentes: 
+- https://cburch.com/logisim/ 
+- https://www.mecanique.co.uk/shop/index.php?route=product/category&path=89 
