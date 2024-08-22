@@ -7,8 +7,6 @@
  * for i = 0, ..., 15:
  * if (sel = 0) out[i] = a[i], else out[i] = b[i]
  */
- /*Realiza la misma funcion de un multiplexor pero realizando el proceso en la misma posicion entre los 16 bits para a, b y el sel*/
- /*El sel en este caso no es de 16 bits, es de solo un bit*/
 CHIP Mux16 {
     IN a[16], b[16], sel;
     OUT out[16];
