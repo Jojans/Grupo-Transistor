@@ -7,7 +7,6 @@
  * for i = 0, ..., 15:
  * out[i] = a[i] Or b[i] 
  */
- /*Para esta compuerta realizamos la operacion OR para cada par de bit individuales de entrada a[i] OR b[i] = out[i]*/
 CHIP Or16 {
     IN a[16], b[16];
     OUT out[16];
