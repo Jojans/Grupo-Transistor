@@ -1,0 +1,9 @@
+CHIP DMux {
+    IN in, sel;
+    OUT a, b;
+
+    PARTS:
+      Not(in=sel, out=notSel); // Inversor que invierta la entrada del selector
+	    And(a=in, b=notSel, out=a); // Aqui realiza la operacion [in AND Not(sel)] y su salida es la primera salida a
+	    And(a=in, b=sel, out=b); // Aqui realiza la operacion [in AND sel] y su salida es la segunda salida b
+}
