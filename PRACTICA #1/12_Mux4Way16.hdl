@@ -16,11 +16,5 @@ CHIP Mux4Way16 {
     PARTS:
     Mux16(a=a, b=b, sel=sel[0], out=out1); 
     Mux16(a=c, b=d, sel=sel[0], out=out2);
-    /*Primero en ambos casos debemos mirar si el bit de menor significancia corresponde a 1 o 0, reduciendo así la elección final entre
-    dos opciones
-    */
     Mux16(a=out1, b=out2, sel=sel[1], out=out);
-    /*
-    Ahora se mira el valor del bit de mayor significancia, para poder mostrar la entrada acorde con el valor del selector
-    */
 }
