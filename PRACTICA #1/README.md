@@ -1,5 +1,7 @@
 Boolean Logic:
 
+Cualquier aparato electrónico que se tome tiene como base fundamental y esencial el uso de compuertas lógicas, estas trabajan con el algebra booleana para llevar a cabo tareas pertinentes, pero existe un problema, llegar a entender dichas compuertas de manera dinámica y cabal no es algo sencillo. Es por ello que se propone la siguiente práctica en donde con ayuda del software NAND2Tetris se busca entender con comodidad los saberes que son menester para una correcta compresión de los aparatos electrónicos en su capa fundamental, esto con ayuda de la programación.
+
 *Not
 
 ![image](https://github.com/user-attachments/assets/dc2279d8-0569-4b2d-9661-fe5e9d12ee80)
