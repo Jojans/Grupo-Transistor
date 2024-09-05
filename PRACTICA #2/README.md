@@ -22,15 +22,15 @@ La lógica secuencial almacena y procesa información en secuencia que depende d
 
 ### ¿Qué tipo de unidades aritmético lógicas existen?
 
-ALU básica. 
-ALU de punto flotante. 
-ALU vector.
-Procesador digital de señales.
-ALU superescalar. 
-ALU escalar. 
-Bitwise ALU. 
-Multi-Core ALU. 
-Custom ALU
+* ALU básica. 
+* ALU de punto flotante. 
+* ALU vector.
+* Procesador digital de señales.
+* ALU superescalar. 
+* ALU escalar. 
+* Bitwise ALU. 
+* Multi-Core ALU. 
+* Custom ALU
 
 ### Referencias
 - Diapositivas teoricas del [Segundo Proyecto](https://drive.google.com/file/d/1ie9s3GjM2TrvL7PrEZJ00gEwezgNLOBm/view)
