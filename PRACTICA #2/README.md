@@ -6,4 +6,5 @@ Boolean Arithmetic and Memory:
 
 
 Explique las principales diferencias entre la lógica aritmética y la lógica secuencial.
+
 La lógica secuencial almacena y procesa información en secuencia que depende de eventos previos, mientras que la lógica aritmética realiza calculos numéricos y aritméticos, como sumas, restas, multiplicaciones y divisiones. Los circuitos de lógica secuencial se basan en la memoria, además de compuertas lógicas, contadores, registros y máquinas de estado para controlar y mantener estados internos a lo largo del tiempo, mientras que los circuitos de lógica aritmética utilizan principalmente compuertas lógicas, multiplexores y otros elementos para realizar cálculos y manipulación de datos.La lógica secuencial puede tener múltiples salidas dependiendo del estado del circuito, mientras que la lógica aritmética combina varias entradas y da una sola salida.
