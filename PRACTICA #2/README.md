@@ -32,7 +32,7 @@ La lógica secuencial almacena y procesa información en secuencia que depende d
 * Multi-Core ALU. 
 * Custom ALU
 
-### Referencias
+## Referencias
 - Diapositivas teoricas del [Segundo Proyecto](https://drive.google.com/file/d/1ie9s3GjM2TrvL7PrEZJ00gEwezgNLOBm/view)
 - Diapositivas teoricas del [Tercer Proyecto](https://drive.google.com/file/d/1boFooygPrxMX-AxzogFYIZ-8QsZiDz96/view)
 - Guia general de implementación del [Segundo Proyecto](https://drive.google.com/file/d/17SzlbKXl0kc5BHsKsKMrOlx-EEpWvq7g/view)
