@@ -6,6 +6,7 @@ La unidad de control es responsable de interpretar las instrucciones de programa
 
 CPU.hdl especifica cómo se conectan y operan estos componentes para ejecutar instrucciones del lenguaje de máquina del computador virtual. Se implementa este archivo utilizando HDL para simular el comportamiento de una CPU.
 
+
 *Memory:
 
 La memoria es un componente esencial de cualquier sistema informático, ya que almacena datos y programas que el computador necesita para operar.
@@ -13,6 +14,7 @@ La memoria es un componente esencial de cualquier sistema informático, ya que a
 En el contexto de este proyecto, la memoria está implementada como una serie de registros, donde cada registro tiene una dirección única y almacena un bit.
 
 Memory.hdl define cómo se comporta esta memoria, incluyendo operaciones como lectura y escritura.Se implementa este archivo utilizando el lenguaje de descripción de hardware (HDL) para simular el comportamiento de una memoria en el computador virtual.
+
 
 *Computer:
 
