@@ -1,4 +1,4 @@
-*CPU:
+# CPU:
 
 Este archivo define la Unidad Central de Procesamiento (CPU) del computador virtual. La CPU es la parte del computador que ejecuta instrucciones de programas almacenados en la memoria.La CPU está compuesta por una unidad de control y una unidad aritmético-lógica (ALU, por sus siglas en inglés), junto con registros internos.
 
@@ -7,7 +7,7 @@ La unidad de control es responsable de interpretar las instrucciones de programa
 CPU.hdl especifica cómo se conectan y operan estos componentes para ejecutar instrucciones del lenguaje de máquina del computador virtual. Se implementa este archivo utilizando HDL para simular el comportamiento de una CPU.
 
 
-*Memory:
+# Memory:
 
 La memoria es un componente esencial de cualquier sistema informático, ya que almacena datos y programas que el computador necesita para operar.
 
@@ -16,7 +16,7 @@ En el contexto de este proyecto, la memoria está implementada como una serie de
 Memory.hdl define cómo se comporta esta memoria, incluyendo operaciones como lectura y escritura.Se implementa este archivo utilizando el lenguaje de descripción de hardware (HDL) para simular el comportamiento de una memoria en el computador virtual.
 
 
-*Computer:
+# Computer:
 
 Este archivo define el computador virtual completo al integrar la CPU, la memoria y otros componentes esenciales.
 
