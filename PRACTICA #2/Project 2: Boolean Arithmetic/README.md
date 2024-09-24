@@ -1,5 +1,3 @@
-Boolean Arithmetic:
-
 # HalfAdder
 ![image](https://github.com/user-attachments/assets/ecdda16c-173d-4d51-bfe9-ce6a15117dac)
 
