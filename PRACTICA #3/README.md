@@ -3,6 +3,7 @@ En esta práctica se abordará el Proyecto 4 del asignado curso de Nand2Tetris, 
 
 ## Preguntas Planteadas
 ### ¿Por qué el lenguaje de máquina es importante para definir la arquitectura computacional?
+Porque proporciona una descripción abstracta pero precisa de las capacidades del computador, ayuda a comprender el diseño del hardware, facilita la programación de bajo nivel y sirve como base para la construcción física del sistema computacional, haciendo que el lenguaje de máquina sea una interfaz directa entre el diseño del hardware y las capacidades de programación, por tanto, le permite una ejecución más eficiente y un control preciso del sistema.
 
 ### ¿Qué diferencia ven entre arquitectura computacional, arquitectura de software y arquitectura del sistema? Justifique su respuesta.
 La principal diferencia entre la arquitectura computacional, la arquitectura de software y la arquitectura del sistema está en su enfoque. La arquitectura computacional se centra en el hardware, mientras que la arquitectura de software se enfoca en cómo está organizado y diseñado el software. Por otro lado, la arquitectura del sistema engloba ambos, hardware y software, y se encarga de cómo interactúan para lograr los objetivos del sistema.
@@ -22,3 +23,4 @@ La arquitectura del sistema por definición debe abarcar la arquitectura computa
 * GeeksforGeeks. (2023). RISC vs CISC architecture. https://www.geeksforgeeks.org/risc-vs-cisc-architecture/
 * Pawar, D. (2023, May 8). Impact of artificial intelligence on computer architecture. Medium. https://medium.com/@dhiraj.pawar21/impact-of-artificial-intelligence-on-computer-architecture-6539d33eb055
 * GeeksforGeeks. (2022, December 2). Difference between System Architecture and Software Architecture. GeeksforGeeks. https://www.geeksforgeeks.org/difference-between-system-architecture-and-software-architecture/
+* Diapositivas Proyecto 4: https://www.nand2tetris.org/_files/ugd/44046b_d70026d8c1424487a451eaba3e372132.pdf
