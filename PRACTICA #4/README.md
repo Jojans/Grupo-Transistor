@@ -5,6 +5,9 @@ Es importante que los estudiantes tengan ciertos conocimientos y habilidades rel
 
 ## ¿Cómo se realizó el proyecto?
 
+
+![Copia de Capa Sesión OSI (3)](https://github.com/user-attachments/assets/4f307b32-8377-4f82-adca-2c16ab34e07b)
+
 ### Paso 1: Se lee el archivo `.asm`
 
 Primero, necesitamos leer el archivo `.asm`, eliminando los comentarios y líneas vacías. La funcion `read_asm_file` sera la encargada de eso:
