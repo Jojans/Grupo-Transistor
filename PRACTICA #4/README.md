@@ -181,6 +181,9 @@ def assemble(file_path):
 
     print(f'Archivo {output_file} generado')
 ```
+### Test de verificación
+![Copia de Capa Sesión OSI (2)](https://github.com/user-attachments/assets/1be8f086-74b1-49c4-b9d5-bf3541cc2834)
+
 
 El ensamblador generara un archivo `.hack` con el codigo binario correspondiente
 
