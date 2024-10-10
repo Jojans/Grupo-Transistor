@@ -5,7 +5,7 @@ symbol_table = {
     'SCREEN': 16384, 'KBD': 24576, 'SP': 0, 'LCL': 1, 'ARG': 2, 'THIS': 3, 'THAT': 4
 }
 
-####### PARSER ##########
+####### PARSER ###########
 def read_asm_file(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
