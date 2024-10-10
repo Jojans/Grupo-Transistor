@@ -1,17 +1,11 @@
-# Práctica #4 _ Proyecto 6 - Ensamblador para el computador Hack
+# Práctica #4, Ensamblador.
 
-Este proyecto consiste en la creacion de un ensamblador que traduce programas escritos en lenguaje ensamblador Hack (.asm) a codigo maquina binario (.hack). El ensamblador Hack es un lenguaje de bajo nivel que interactua directamente con el hardware del computador Hack.
+Es importante que los estudiantes tengan ciertos conocimientos y habilidades relacionados al ensamblador. Es por esto  que en el presente proyecto se propone un ensamblador que traduce programas escritos en el lenguaje symbolic Hack assembly a código binario. 
 
-El proyecto se desarrolla en dos pasos:
 
-1. **Paso 1**: Implementar un ensamblador que maneje instrucciones sin simbolos (instrucciones A y C basicas).
-2. **Paso 2**: Extender el programa que hicimos para que sea capaz de traducir simbolos(variables y etiquetas).
+## ¿Cómo se realizó el proyecto?
 
-El ensamblador leera un archivo `.asm` de entrada y generara un archivo `.hack` de salida con el codigo binario.
-
-## Com esta hecho el programa
-
-### Paso 1: Leer el archivo `.asm`
+### Paso 1: Se lee el archivo `.asm`
 
 Primero, necesitamos leer el archivo `.asm`, eliminando los comentarios y líneas vacías. La funcion `read_asm_file` sera la encargada de eso:
 
@@ -195,25 +189,11 @@ El ensamblador generara un archivo `.hack` con el codigo binario correspondiente
 La principal limitante fue no poder probar el ensamblador directamente en un simulador o entorno real. Como no se podía ejecutar el código para verificar si funcionaba correctamente, confiar solo en la teoría y la lógica del código, sin tener certeza de que cada parte funcionaría como se espera. Lo cual llego a ser un poco complicado porque es mas facil poder depurar el codigo viendo paso por paso como se comporta la traduccion para poder revisar los errores que hayan por el camino.
 
 ## BONUS: ¿Por qué es tan importante el ensamblador?
+El ensamblador juega un papel crucial como puente entre los lenguajes de programación de alto nivel y el código máquina que la computadora puede ejecutar directamente. Sin esta herramienta, los programadores tendrían que escribir en lenguaje máquina, lo que resultaría extremadamente complicado y propenso a errores, haciendo que el proceso de desarrollo de software fuera mucho más difícil. El ensamblador simplifica este proceso al ofrecer flexibilidad y control sobre los recursos del equipo, lo que lo convierte en una pieza clave en aplicaciones como sistemas embebidos, sistemas operativos y controladores de dispositivos, donde la optimización del rendimiento es esencial.
 
-El ensamblador es una pieza fundamental en el mundo de la programación, ya que es un puente entre los lenguajes de programación de alto nivel y el hardware, permite una gran flexibilidad y control sobre los recursos del equipo. Esto hace que sea útil en aplicaciones como sistemas embebidos, sistemas operativos y controladores de dispositivos, donde la optimización del rendimiento es muy importante.
-
-Además, el ensamblador es usualmente el elegido en situaciones donde la precisión y la velocidad son fundamentales. Como este puede aprovechar al máximo las capacidades del hardware sin sobrecargar como en el caso de los lenguajes de alto nivel, es ideal para áreas críticas donde cada milisegundo y cada byte son importantes
-
+Además, el ensamblador es la opción preferida en situaciones donde la precisión y la velocidad son fundamentales, ya que puede aprovechar al máximo las capacidades del hardware sin la sobrecarga de los lenguajes de alto nivel. Esto lo hace ideal para áreas críticas en las que cada milisegundo y cada byte de memoria son importantes.
 
 
-
-
-
-
-
-
-
-
-
-
-
-¿Por qué es tan importante el ensamblador?
 
 
 ## Referencias
