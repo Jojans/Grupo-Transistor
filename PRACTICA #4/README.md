@@ -11,7 +11,7 @@ Para el desarrollo de este proyecto se basó en el diseño en los tres component
 
 ### 1: Manejo de etiquetas y símbolos
 
-Para manejar etiquetas y variables simbolicas tales como `@R0`, `@OUTPUT_D`, utilizamos una tabla de símbolos con su correspondiente numero.
+Se identifican y almacenan las etiquetas junto con su dirección de memoria para ser usadas en las instrucciones, donde esta tabla de símbolos es un componente que actúa como un diccionario.
 
 #### Tabla de símbolos:
 
@@ -23,7 +23,7 @@ symbol_table = {
 }
 ```
 
-### 2: Se lee el archivo `.asm`
+### 2: Lectura del archivo ".asm"
 
 Primero, necesitamos leer el archivo `.asm`, eliminando los comentarios y líneas vacías. La funcion `read_asm_file` sera la encargada de eso:
 
@@ -42,7 +42,7 @@ def read_asm_file(file_path):
     return clean_lines
 ```
 
-### 3: Traduccion de instrucciones tipo A
+### 3: Se traduce las instrucciones tipo "A"
 
 Las instrucciones tipo A comienzan con `@` y representan un valor numerico. La funcion `translate_a_instruction` se encarga de traducirlas a un valor binario de 16 bits.
 
@@ -53,7 +53,7 @@ def translate_a_instruction(instruction):
     return '0' + binary_value.zfill(15)  # Aseguramos que tenga 16 bits
 ```
 
-### 4: Traduccion de instrucciones tipo C
+### 4:  Se traduce las instrucciones tipo "C"
 
 Las instrucciones tipo C realizan operaciones aritmeticas y logicas. Utilizamos tablas de traduccion para convertir las partes de la instruccion (`comp`, `dest`, `jump`) a codigo binario.
 
@@ -121,7 +121,6 @@ def translate_c_instruction(instruction):
 ```
 
 
-
 #### Primera pasada: Busqueda e identificacion de etiquetas
 
 En la primera pasada, recorremos el archivo `.asm` para identificar las etiquetas y asignarles direcciones de memoria en la tabla de símbolos.
@@ -165,7 +164,7 @@ def second_pass(lines):
     return machine_code
 ```
 
-### Paso 5: Proceso completo de assembler
+### 5: Code del "Assembler"
 
 Finalmente, unimos todo el proceso en una funcion que lea el archivo `.asm`, maneje etiquetas y variables, y genere el archivo `.hack`.
 
@@ -187,11 +186,13 @@ def assemble(file_path):
 
     print(f'Archivo {output_file} generado')
 ```
+El ensamblador generara el archivo `.hack` con el codigo binario.
+
 ### Test de verificación
 ![Copia de Capa Sesión OSI (2)](https://github.com/user-attachments/assets/1be8f086-74b1-49c4-b9d5-bf3541cc2834)
 
 
-El ensamblador generara un archivo `.hack` con el codigo binario correspondiente
+
 
 ## Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta.
 La principal limitante del ensamblador se refleja en el nivel al que opera ya que es muy cercano al de la máquina por lo que es complejo para los humanos, ya que no ofrece la flexibilidad ni las facilidades que un lenguaje de alto nivel proporciona.
