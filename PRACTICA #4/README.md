@@ -188,7 +188,6 @@ def assemble(file_path):
 El ensamblador generara un archivo `.hack` con el codigo binario correspondiente
 
 ## Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta.
-
 La principal limitante fue no poder probar el ensamblador directamente en un simulador o entorno real. Como no se podía ejecutar el código para verificar si funcionaba correctamente, confiar solo en la teoría y la lógica del código, sin tener certeza de que cada parte funcionaría como se espera. Lo cual llego a ser un poco complicado porque es mas facil poder depurar el codigo viendo paso por paso como se comporta la traduccion para poder revisar los errores que hayan por el camino.
 
 ## BONUS: ¿Por qué es tan importante el ensamblador?
@@ -200,3 +199,6 @@ Además, el ensamblador es la opción preferida en situaciones donde la precisi�
 
 
 ## Referencias
+Assembly language: the bridge between hardware and software. (n.d.). Progptr - Learn Fast, Build Fast! https://www.progptr.com/site/?id=Assembly%20Language&ppid=assembly-language
+https://www.digikey.com/en/maker/blogs/2024/unveiling-the-power-of-assembly-level-language
+
