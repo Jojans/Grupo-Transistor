@@ -200,5 +200,6 @@ Además, el ensamblador es la opción preferida en situaciones donde la precisi�
 
 ## Referencias
 Assembly language: the bridge between hardware and software. (n.d.). Progptr - Learn Fast, Build Fast! https://www.progptr.com/site/?id=Assembly%20Language&ppid=assembly-language
+
 https://www.digikey.com/en/maker/blogs/2024/unveiling-the-power-of-assembly-level-language
 
