@@ -191,7 +191,7 @@ def assemble(file_path):
 El ensamblador generara un archivo `.hack` con el codigo binario correspondiente
 
 ## Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta.
-La principal limitante fue no poder probar el ensamblador directamente en un simulador o entorno real. Como no se podía ejecutar el código para verificar si funcionaba correctamente, confiar solo en la teoría y la lógica del código, sin tener certeza de que cada parte funcionaría como se espera. Lo cual llego a ser un poco complicado porque es mas facil poder depurar el codigo viendo paso por paso como se comporta la traduccion para poder revisar los errores que hayan por el camino.
+La principal limitante del ensamblador se refleja en el nivel al que opera ya que es muy cercano al de la máquina por lo que es complejo para los humanos, ya que no ofrece la flexibilidad ni las facilidades que un lenguaje de alto nivel proporciona.
 
 ## BONUS: ¿Por qué es tan importante el ensamblador?
 El ensamblador juega un papel crucial como puente entre los lenguajes de programación de alto nivel y el código máquina que la computadora puede ejecutar directamente. Sin esta herramienta, los programadores tendrían que escribir en lenguaje máquina, lo que resultaría extremadamente complicado y propenso a errores, haciendo que el proceso de desarrollo de software fuera mucho más difícil. El ensamblador simplifica este proceso al ofrecer flexibilidad y control sobre los recursos del equipo, lo que lo convierte en una pieza clave en aplicaciones como sistemas embebidos, sistemas operativos y controladores de dispositivos, donde la optimización del rendimiento es esencial.
