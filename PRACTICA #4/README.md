@@ -8,7 +8,22 @@ Para el desarrollo de este proyecto se basó en el diseño en los tres component
 
 ![Copia de Capa Sesión OSI (3)](https://github.com/user-attachments/assets/4f307b32-8377-4f82-adca-2c16ab34e07b)
 
-### Paso 1: Se lee el archivo `.asm`
+
+### 1: Manejo de etiquetas y símbolos
+
+Para manejar etiquetas y variables simbolicas tales como `@R0`, `@OUTPUT_D`, utilizamos una tabla de símbolos con su correspondiente numero.
+
+#### Tabla de símbolos:
+
+```python
+symbol_table = {
+    'R0': 0, 'R1': 1, 'R2': 2, 'R3': 3, 'R4': 4, 'R5': 5, 'R6': 6, 'R7': 7,
+    'R8': 8, 'R9': 9, 'R10': 10, 'R11': 11, 'R12': 12, 'R13': 13, 'R14': 14, 'R15': 15,
+    'SCREEN': 16384, 'KBD': 24576, 'SP': 0, 'LCL': 1, 'ARG': 2, 'THIS': 3, 'THAT': 4
+}
+```
+
+### 2: Se lee el archivo `.asm`
 
 Primero, necesitamos leer el archivo `.asm`, eliminando los comentarios y líneas vacías. La funcion `read_asm_file` sera la encargada de eso:
 
@@ -27,7 +42,7 @@ def read_asm_file(file_path):
     return clean_lines
 ```
 
-### Paso 2: Traduccion de instrucciones tipo A
+### 3: Traduccion de instrucciones tipo A
 
 Las instrucciones tipo A comienzan con `@` y representan un valor numerico. La funcion `translate_a_instruction` se encarga de traducirlas a un valor binario de 16 bits.
 
@@ -38,7 +53,7 @@ def translate_a_instruction(instruction):
     return '0' + binary_value.zfill(15)  # Aseguramos que tenga 16 bits
 ```
 
-### Paso 3: Traduccion de instrucciones tipo C
+### 4: Traduccion de instrucciones tipo C
 
 Las instrucciones tipo C realizan operaciones aritmeticas y logicas. Utilizamos tablas de traduccion para convertir las partes de la instruccion (`comp`, `dest`, `jump`) a codigo binario.
 
@@ -105,19 +120,7 @@ def translate_c_instruction(instruction):
     return '111' + comp_bits + dest_bits + jump_bits
 ```
 
-### Paso 4: Manejo de etiquetas y símbolos
 
-Para manejar etiquetas y variables simbolicas tales como `@R0`, `@OUTPUT_D`, utilizamos una tabla de símbolos con su correspondiente numero.
-
-#### Tabla de símbolos:
-
-```python
-symbol_table = {
-    'R0': 0, 'R1': 1, 'R2': 2, 'R3': 3, 'R4': 4, 'R5': 5, 'R6': 6, 'R7': 7,
-    'R8': 8, 'R9': 9, 'R10': 10, 'R11': 11, 'R12': 12, 'R13': 13, 'R14': 14, 'R15': 15,
-    'SCREEN': 16384, 'KBD': 24576, 'SP': 0, 'LCL': 1, 'ARG': 2, 'THIS': 3, 'THAT': 4
-}
-```
 
 #### Primera pasada: Busqueda e identificacion de etiquetas
 
