@@ -6,21 +6,21 @@
 // Computes M[2] = max(M[0], M[1])  where M stands for RAM
 
    @0
-   D=M              // D = first number
+   D=M              
    @1
-   D=D-M            // D = first number - second number
+   D=D-M            
    @OUTPUT_FIRST
-   D;JGT            // if D>0 (first is greater) goto output_first
+   D;JGT            
    @1
-   D=M              // D = second number
+   D=M              
    @OUTPUT_D
-   0;JMP            // goto output_d
+   0;JMP           
 (OUTPUT_FIRST)
    @0             
-   D=M              // D = first number
+   D=M             
 (OUTPUT_D)
    @2
-   M=D              // M[2] = D (greatest number)
+   M=D              
 (INFINITE_LOOP)
    @INFINITE_LOOP
-   0;JMP            // infinite loop
+   0;JMP          
