@@ -3,8 +3,8 @@
 Es importante que los estudiantes tengan ciertos conocimientos y habilidades relacionados al ensamblador. Es por esto  que en el presente proyecto se propone un ensamblador que traduce programas escritos en el lenguaje symbolic Hack assembly a código binario. 
 
 
-## ¿Cómo se realizó el proyecto?
-Para el desarrollo de este proyecto se basó en el diseño en los tres componentes principales de un ensamblador: la Symbol Table (Tabla de Símbolos), el Parser (Analizador) y el Code (Generador de Código).
+## Desarrollo
+Para el desarrollo de este proyecto se basó en el diseño de los tres componentes principales de un ensamblador: la Symbol Table (Tabla de Símbolos), el Parser (Analizador) y el Code (Generador de Código).
 
 ![Copia de Capa Sesión OSI (3)](https://github.com/user-attachments/assets/4f307b32-8377-4f82-adca-2c16ab34e07b)
 
