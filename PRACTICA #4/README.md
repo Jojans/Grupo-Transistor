@@ -4,7 +4,7 @@ Es importante que los estudiantes tengan ciertos conocimientos y habilidades rel
 
 
 ## ¿Cómo se realizó el proyecto?
-
+Para el desarrollo de este proyecto se basó en el diseño en los tres componentes principales de un ensamblador: la Symbol Table (Tabla de Símbolos), el Parser (Analizador) y el Code (Generador de Código).
 
 ![Copia de Capa Sesión OSI (3)](https://github.com/user-attachments/assets/4f307b32-8377-4f82-adca-2c16ab34e07b)
 
