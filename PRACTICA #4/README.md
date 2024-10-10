@@ -188,11 +188,14 @@ def assemble(file_path):
 ```
 El ensamblador generara el archivo `.hack` con el codigo binario.
 
-### Test de verificación
+### 6: Test de verificación
+Una vez con los ".hack" generados se validó en el IDE de Nand2Tetris con los valores esperados.
+
 ![Copia de Capa Sesión OSI (2)](https://github.com/user-attachments/assets/1be8f086-74b1-49c4-b9d5-bf3541cc2834)
 
 
 
+### PREGUNTAS
 
 ## Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta.
 La principal limitante del ensamblador se refleja en el nivel al que opera ya que es muy cercano al de la máquina por lo que es complejo para los humanos, ya que no ofrece la flexibilidad ni las facilidades que un lenguaje de alto nivel proporciona.
@@ -206,7 +209,11 @@ Además, el ensamblador es la opción preferida en situaciones donde la precisi�
 
 
 ## Referencias
+Yang Su. (2022, April 15). Nand2Tetris Project 06 (Part 1) Design of Hack Assembler [Video]. YouTube. https://www.youtube.com/watch?v=TZ10SOChdPo
+
 Assembly language: the bridge between hardware and software. (n.d.). Progptr - Learn Fast, Build Fast! https://www.progptr.com/site/?id=Assembly%20Language&ppid=assembly-language
 
-https://www.digikey.com/en/maker/blogs/2024/unveiling-the-power-of-assembly-level-language
+digikey. (s.f.). Obtenido de Unveiling the Power of Assembly Level Language: https://www.digikey.com/en/maker/blogs/2024/unveiling-the-power-of-assembly-level-language
+
+
 
