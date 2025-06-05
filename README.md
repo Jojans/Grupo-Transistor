@@ -10,5 +10,3 @@ Hammer Ronaldo Muñoz Hernández - 2211918
 
 Anderson Jahir Lemus Ramírez -  2211894
 
-Link Web: https://sites.google.com/view/lostransistor?usp=sharing
-
